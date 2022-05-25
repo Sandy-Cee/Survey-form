@@ -1,0 +1,132 @@
+<html>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">VS1234 Neighbourhood Survey Form</h1>
+      <p id="description" class="description text-center">Thank you for taking a few minutes to share your views</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <p>1. How strong is a sense of community in this neighbourhood?</p><br>
+        <label>
+          <input name="sense of community" value="Extremely strong" type="radio" class="input-radio" checked />Extremely strong</label>
+        <label>
+          <input name="sense of community" value="Very strong" type="radio" class="input-radio" />Very strong</label>
+        <label>
+          <input name="sense of community" value="Somewhat strong" type="radio" class="input-radio" />Somewhat strong</label>
+        <label>
+          <input name="sense of community" value="Not so strong" type="radio" class="input-radio" />Not so strong</label>
+        <label>
+          <input name="sense of community" value="Not at all strong" type="radio" class="input-radio" />Not at all strong</label>
+      </div>
+      <div class="form-group">
+        <p>2. Overall, how safe do you feel in this neighbourhood?</p><br>
+        <label>
+          <input name="feeling safe" value="Extremely safe" type="radio" class="input-radio" checked />Extremely safe</label>
+        <label>
+          <input name="feeling safe" value="Very safe" type="radio" class="input-radio" />Very safe</label>
+        <label>
+          <input name="feeling safe" value="Somewhat safe" type="radio" class="input-radio" />Somewhat safe</label>
+        <label>
+          <input name="feeling safe" value="Not so safe" type="radio" class="input-radio" />Not so safe</label>
+        <label>
+          <input name="feeling safe" value="Not at all safe" type="radio" class="input-radio" />Not at all safe</label>
+      </div>
+      <div class="form-group">
+        <p>3. How well are the streets in this neighbourhood maintained?</p><br>
+        <label>
+          <input name="streets maintained" value="Extremely well" type="radio" class="input-radio" checked />Extremely well</label>
+        <label>
+          <input name="streets maintained" value="Very well" type="radio" class="input-radio" />Very well</label>
+        <label>
+          <input name="streets maintained" value="Somewhat well" type="radio" class="input-radio" />Somewhat well</label>
+        <label>
+          <input name="streets maintained" value="Not so well" type="radio" class="input-radio" />Not so well</label>
+        <label>
+          <input name="streets maintained" value="Not at all well" type="radio" class="input-radio" />Not at all well</label>
+      </div>
+      <div class="form-group">
+        <p>4. What do you like the most about this neighbourhood?</p><br>
+        <select id="dropdown" name="like most" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="community">Strong sense of community</option>
+          <option value="safety and security">Feeling of safety and security</option>
+          <option value="strata rules">Sufficient strata rules and enforcement</option>
+          <option value="quiet">Quiet and peaceful</option>
+          <option value="maintained">Well-maintained</option>
+          <option value="other">Other (please add comment below)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>5. What do you like the least about this neighbourhood?</p><br>
+        <select id="dropdown" name="like least" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="nosy neighbours">Nosy neighbours</option>
+          <option value="strata rules">Strict strata rules and enforcement</option>
+          <option value="lack of enforcement">Lack of strata by-law enforcement</option>
+          <option value="dock issues">Public dock over-crowding</option>
+          <option value="noisy">Traffic noise and loud boaters</option>
+          <option value="other">Other (please add comment below)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>6. What changes would help to improve this neighbourhood? <span class="clue">(check all that apply)</span></p><br>
+
+        <label>
+          <input name="prefer" value="hanging baskets" type="checkbox" class="input-checkbox" />Hanging baskets on light standards</label>
+        <label>
+          <input name="prefer" value="road maintenance" type="checkbox" class="input-checkbox" />Road maintenance (cleaning and painting lines)</label>
+        <label>
+          <input name="prefer" value="playground" type="checkbox" class="input-checkbox" />Building a playground in the park</label>
+        <label>
+          <input name="prefer" value="maintain trails" type="checkbox" class="input-checkbox" />Maintaining trails</label>
+        <label>
+          <input name="prefer" value="dock maintenance" type="checkbox" class="input-checkbox" />Public dock maintenance</label>
+        <label>
+          <input name="prefer" value="security" type="checkbox" class="input-checkbox" />Upgrading to full time security</label>
+        <label>
+          <input name="prefer" value="by-law enforcement" type="checkbox" class="input-checkbox" />Stricter strata by-law enforcement</label>
+        <div class="form-group">
+          <p>7. Overall, are you satisfied living in this neighbourhood?</p><br>
+          <label>
+            <input name="satisfied experience" value="Extremely satisfied" type="radio" class="input-radio" checked />Extremely satisfied</label>
+          <label>
+            <input name="satisfied experience" value="Moderately satisfied" type="radio" class="input-radio" />Moderately satisfied</label>
+          <label>
+            <input name="satisfied experience" value="Slightly satisfied" type="radio" class="input-radio" />Slightly satisfied</label>
+          <label>
+            <input name="satisfied experience" value="Neither satisfied nor dissatisfied" type="radio" class="input-radio" />Neither satisfied or dissatisfied</label>
+          <label>
+            <input name="satisfied experience" value="Slightly dissatisfied" type="radio" class="input-radio" />Slightly dissatisfied</label>
+          <label>
+            <input name="satisfied experience" value="Moderately dissatisfied" type="radio" class="input-radio" />Moderately dissatisfied</label>
+          <label>
+            <input name="satisfied experience" value="Extremely dissatisfied" type="radio" class="input-radio" />Extremely dissatisfied</label>
+        </div>
+
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter you name" required />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" required name="email" id="email" class="form-control" placeholder="e.g. test@gmail.com" required />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)
+            </span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+        </div>
+        <div class="form-group">
+          <p>8. Do you have any other comments, questions, or concerns?</p><br>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div class="form-group"> <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+  </div>
+</body>
+<footer> Copyright &copy; 2022 Sandy-Cee </footer>
+
+</html>
